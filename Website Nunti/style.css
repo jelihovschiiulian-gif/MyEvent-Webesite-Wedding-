@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 3956px;
+    background-color: #FCFFF5;
+}
+
+.Section1{
+    width: 100%;
+    height: 817px;
+}
+
+.nav{
+    position: relative;
+    background-color: #FCFFF5;
+    width: 100%;
+    height: 86px;
+    
+}
+
+.logo-nav{
+    position: absolute;
+    top:19px;
+    left: 105px;
+}
+
+.connect-button{
+    position: absolute;
+    width: 188px;
+    height: 34px;
+    background-color: #F8FFE5;
+    border: 2px solid #C4C4C4;
+    top: 27px;
+    right: 102px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+        display: flex;
+    justify-content: center;
+
+    align-items: center;
+}
+
+    .connect-text{
+        font-size: 16px;
+        font-family: 'Open Sans', sans-serif;
+
+    }
+
+.weeding-back{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.Content-S1{
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    width: 100%;
+    height: 634px; 
+    background-color: none ;
+}
+
+.Transparency-S1{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 634px;
+    background-color: #DBDCDA ;
+    opacity: 0.84;
+    z-index: -1;
+}
+
+.Title-s1{
+    position: absolute;
+    left: 105px;
+    top: 128px;
+    font-size: 63px;
+    font-family: 'Satisfy', cursive;
+    line-height: 1.2;
+    font-weight: 100;
+    color: #01261D;
+}
+
+
+.connect-button2{
+    position: absolute;
+    width: 482px;
+    height: 68px;
+    background-color: #F8FFE5;
+    top: 465px;
+    left: 105px;
+    border-radius: 12px;
+   
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+}
+
+    .connect-text2{
+        font-size: 25px;
+        font-family: 'Open Sans', sans-serif;
+        color: #4B503D;
+
+    }
+
+    .img1S1{
+        position: absolute;
+        right: 437px;
+        top: 60px;
+    }
+
+    .img2S1{
+        position: absolute;
+        right: 200px;
+        top: 236px;
+    }
+    .leaves{
+        position: absolute;
+        right: 0px;
+        top: 356px;
+        z-index: -1;
+    }
