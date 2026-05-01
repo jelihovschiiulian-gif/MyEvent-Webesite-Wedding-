@@ -14,9 +14,11 @@
             <h1>Intră în contul tău</h1>
             <p>Nu ai cont? <strong>Creează acum</strong></p>
 
-             <div class="Google">
-                <p>Login with Google</p>
+             <div class="Google" onclick="loginGoogle()">
+                <p>Login with <img class="google-icon" src="Imges-Folder/Google.svg" alt=""></p>
             </div>
+
+            <p class="sau">sau</p>
 
             <div class="Email">
                 <p>Email</p>
@@ -286,7 +288,35 @@
         <p class="rights">Toate drepturile rezervate</p>
     </section>
 
+<script src="https://accounts.google.com/gsi/client" async defer></script>
 
+<script>
+
+let tokenClient;
+
+window.onload = function () {
+
+    tokenClient = google.accounts.oauth2.initTokenClient({
+        client_id: "19114463559-tdfmcblo1okn3ab3coudin72mrbvaijt.apps.googleusercontent.com",
+        scope: "email profile openid",
+        callback: (response) => {
+
+            console.log(response);
+
+            alert("Te-ai conectat cu Google!");
+
+        },
+    });
+
+}
+
+function loginGoogle() {
+
+    tokenClient.requestAccessToken();
+
+}
+
+</script>
 </body>
 
 </html>
