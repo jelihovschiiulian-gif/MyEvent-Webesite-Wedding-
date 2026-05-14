@@ -9,8 +9,13 @@
 </head>
 
 <body>
-    <section class="Section1">
-        <div class="account">
+
+    <section class="Section1 fade-in">
+       
+         <div id="google-login" class="account hidden">
+           
+           <div id="x-btn" class="x"></div>
+
             <h1>Intră în contul tău</h1>
             <p>Nu ai cont? <strong>Creează acum</strong></p>
 
@@ -35,11 +40,12 @@
 
 
             </div>
+            
         
         <div class="nav">
             <img class="logo-nav" src="Imges-Folder/InviteLogo.svg" alt="">
 
-            <div class="connect-button">
+            <div id="connect-button"  class="connect-button ">
                 <p class="connect-text">conectează-te</p>
             </div>
 
@@ -72,7 +78,8 @@
 
     </section>
 
-    <section class="Section-2">
+
+    <section class="Section-2 fade-in">
 
         <div class="play-Square">
             <div class="triangle-box">
@@ -131,7 +138,7 @@
 
     </section>
 
-    <section class="Section-3">
+    <section class="Section-3 fade-in">
         <div class="S3-Title">
             <h1>Catalog</h1>
         </div>
@@ -275,9 +282,10 @@
 
     </section>
 
+
      
 
-    <section class="Section-4">
+    <section class="Section-4 fade-in">
         <p class="terms">Termeni şi condiții</p>
         <img class="instagram-w" src="Imges-Folder/instagram-w.svg" alt="">
 
@@ -287,7 +295,6 @@
 
         <p class="rights">Toate drepturile rezervate</p>
     </section>
-
 <script src="https://accounts.google.com/gsi/client" async defer></script>
 
 <script>
@@ -315,6 +322,19 @@ function loginGoogle() {
     tokenClient.requestAccessToken();
 
 }
+
+const connect = document.getElementById("connect-button");
+const googleLogin = document.getElementById("google-login");
+const xBtn = document.getElementById("x-btn");
+
+connect.addEventListener("click", () => {
+    googleLogin.classList.remove('hidden');
+
+});
+
+xBtn.addEventListener("click", () => {
+    googleLogin.classList.add('hidden');
+});
 
 </script>
 </body>
